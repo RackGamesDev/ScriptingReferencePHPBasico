@@ -9,7 +9,7 @@
     <?php
         echo "adios"
     ?>
-    <!--en este caso, sea index.php o index.html saldria justo con el nombre de la carpeta ya que es lo que el navegador busca primero, pero se puede acceder a cada recurso por separado-->
+    <!--En este caso, sea index.php o index.html saldria justo con el nombre de la carpeta ya que es lo que el navegador busca primero, pero se puede acceder a cada recurso por separado-->
     <script>console.log("asdfasdf")</script>
 </body>
 </html>
