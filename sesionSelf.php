@@ -6,18 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <!--igual que las sesiones normales pero todo en la misma pagina-->
+    <!--Igual que las sesiones normales pero todo en la misma pagina-->
     <?php
-        if(isset($_POST["enviar"])){#nombre del boton submit del formulario
-            #comprobacion del formulario (de llegada con _POST)
+        if(isset($_POST["enviar"])){#Nombre del boton submit del formulario
+            #Comprobacion del formulario (de llegada con _POST)
         }
     ?>
 
     <?php
         if(!isset($_SESSION["usuario"])){
-            include("sesionForm.html");#incluir el formulario si no se ha iniciado sesion
+            include("sesionForm.html");#Incluir el formulario si no se ha iniciado sesion
         } else {
-            echo $_SESSION["usuario"];#mostrar contenido exclusivo de cuenta
+            echo $_SESSION["usuario"];#Mostrar contenido exclusivo de cuenta
         }
     ?>
     <h2>contenido normal de la pagina principal o lo que sea</h2>
