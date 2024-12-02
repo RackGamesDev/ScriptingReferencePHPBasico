@@ -7,12 +7,12 @@
 </head>
 <body>
     <?php
-        define("DB_HOST", "localhost");#direccion web del host (no tienen por que ser constantes)
-        define("DB_NOMBRE", "base");#nombre de la base de datos
-        define("DB_USUARIO", "root");#usuario permitido
-        define("DB_CONTRASEGNA", "");#su contrasegna
+        define("DB_HOST", "localhost");#Direccion web del host (no tienen por que ser constantes)
+        define("DB_NOMBRE", "base");#Nombre de la base de datos
+        define("DB_USUARIO", "root");#Usuario permitido
+        define("DB_CONTRASEGNA", "");#Su contrasegna
 
-        class Conexion{#clase base para las conexiones
+        class Conexion{#Clase base para las conexiones
             protected $conexion_db;
             public function __Construct(){
                 try{
@@ -26,7 +26,7 @@
             }
         }
 
-        class DevuelveDatos extends Conexion{#clase creada para devolver todos los objetos de x tabla, mediante una consulta (se podria usar otra consulta con otros datos y acciones)
+        class DevuelveDatos extends Conexion{#Clase creada para devolver todos los objetos de x tabla, mediante una consulta (se podria usar otra consulta con otros datos y acciones)
             public function __Construct(){
                 parent::__Construct();
             }
@@ -42,7 +42,7 @@
         }
 
         $datos = new DevuelveDatos();
-        $arrayDatos = $datos->get_datos("tabla");#recibiendo esos datos
+        $arrayDatos = $datos->get_datos("tabla");#Recibiendo esos datos
         foreach($arrayDatos as $valor){
             echo $valor["IDobj"];
         }
