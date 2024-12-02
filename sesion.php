@@ -7,12 +7,12 @@
 </head>
 <body>
     <?php
-        #las sesiones sirven para que solo cierta persona tenga un acceso a una pagina, o esta se modifique dependiendo de quien la vea
-        session_start();#iniciar la sesion, obviamente despues de haber pasado un login
-        $_SESSION["usuario"]="usuario";#guardar una variable en su sesion, "usuario" deberia ser el id del usuario en la base de datos
+        #Las sesiones sirven para que solo cierta persona tenga un acceso a una pagina, o esta se modifique dependiendo de quien la vea
+        session_start();#Iniciar la sesion, obviamente despues de haber pasado un login
+        $_SESSION["usuario"]="usuario";#Guardar una variable en su sesion, "usuario" deberia ser el id del usuario en la base de datos
     ?>
 
-    <!--0000000000000000000000000000000000000 luego en otra pagina:-->
+    <!--   Luego en otra pagina:-->
 
     <?php
         #session_start();#esta parte deberia estar en la pagina que solo los usuarios podrian ver o se veria modificada (esto esta comentado pero de normal si habria que hacerlo)
@@ -23,13 +23,13 @@
         }
     ?>
     
-    <!--0000000000000000000000000000000000000 luego en otra pagina:-->
+    <!--   Luego en otra pagina:-->
 
     <?php
-        #luego en otra pagina, para cerrar la sesion
-        #session_start();#para poder hacer cosas con la sesion (esto esta comentado pero de normal si habria que hacerlo)
-        session_destroy();#cerrar sesion
-        header("location:form.php");#redirigir al login
+        #Luego en otra pagina, para cerrar la sesion
+        #session_start();#Para poder hacer cosas con la sesion (esto esta comentado pero de normal si habria que hacerlo)
+        session_destroy();#Cerrar sesion
+        header("location:form.php");#Redirigir al login
     ?>
 </body>
 </html>
